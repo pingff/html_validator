@@ -22,7 +22,7 @@ def validate_html(html):
         else:
             if len(lists) == 0:
                 return False
-            if lists[-1][:(-len(lists[-1])) +1:-1] == tags[i][:(-len(lists[-1])) +1:-1]:
+            if lists[-1][:(-len(lists[-1])) + 1:-1] == tags[i][:(-len(lists[-1])) + 1:-1]:
                 lists.pop()
             else:
                 return False
