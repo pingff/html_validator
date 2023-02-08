@@ -2,6 +2,7 @@
 
 import re
 
+
 def validate_html(html):
     '''
     This function performs a limited version of html validation by checking whether every opening tag has a corresponding closing tag.
@@ -21,7 +22,7 @@ def validate_html(html):
         else:
             if len(lists) == 0:
                 return False
-            if lists[-1][:(-len(lists[-1]))+1:-1] == tags[i][:(-len(lists[-1]))+1:-1]:
+            if lists[-1][:(-len(lists[-1])) +1:-1] == tags[i][:(-len(lists[-1])) +1:-1]:
                 lists.pop()
             else:
                 return False
@@ -31,6 +32,7 @@ def validate_html(html):
     # then process these html tags using the balanced parentheses algorithm from the class/book
     # the main difference between your code and the code from class will be that you will have to keep track of not just the 3 types of parentheses,
     # but arbitrary text located between the html tags
+
 
 def _extract_tags(html):
     '''
